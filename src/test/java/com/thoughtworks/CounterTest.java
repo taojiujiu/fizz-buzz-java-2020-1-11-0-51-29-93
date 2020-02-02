@@ -24,12 +24,17 @@ public class CounterTest {
     }
 
     @Test
-    public void should_return_Whizz_given_number_contain_7_and_multiple_of_3(){
+    public void should_return_Fizz_given_number_contain_7_and_multiple_of_3(){
         assertEquals(counter.fizzBuzzWhizz(72),"Fizz");
     }
 
     @Test
     public void should_return_Whizz_given_number_contain_7_and_multiple_of_7(){
+        assertEquals(counter.fizzBuzzWhizz(77),"Whizz");
+    }
+
+    @Test
+    public void should_return_Whizz_given_number_contain_7_and_multiple_of_7_and_5(){
         assertEquals(counter.fizzBuzzWhizz(70),"Whizz");
     }
 
