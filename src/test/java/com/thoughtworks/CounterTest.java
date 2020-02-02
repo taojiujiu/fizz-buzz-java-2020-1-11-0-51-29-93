@@ -14,6 +14,11 @@ public class CounterTest {
     }
 
     @Test
+    public void should_return_1_given_number_1() {
+        assertEquals(counter.fizzBuzzWhizz(1),"1");
+    }
+
+    @Test
     public void should_return_Fizz_given_number_contain_7_and_multiple_of_3_and_5() {
         assertEquals(counter.fizzBuzzWhizz(75),"Fizz");
     }
@@ -27,6 +32,12 @@ public class CounterTest {
     public void should_return_Whizz_given_number_contain_7_and_multiple_of_7(){
         assertEquals(counter.fizzBuzzWhizz(70),"Whizz");
     }
+
+    @Test
+    public void should_return_BuzzWhizz_given_number_contain_5_and_multiple_of_3_and_7(){
+        assertEquals(counter.fizzBuzzWhizz(35),"BuzzWhizz");
+    }
+
 
 
 }
