@@ -43,6 +43,13 @@ public class CounterTest {
         assertEquals(counter.fizzBuzzWhizz(35),"BuzzWhizz");
     }
 
+    @Test
+    public void should_return_Fizz_given_number_only_contain_3_and_multiple_of_5(){
+        assertEquals(counter.fizzBuzzWhizz(30),"Fizz");
+    }
 
-
+    @Test
+    public void should_return_Fizz_given_number_only_contain_3(){
+        assertEquals(counter.fizzBuzzWhizz(31),"Fizz");
+    }
 }

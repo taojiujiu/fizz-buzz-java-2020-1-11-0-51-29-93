@@ -12,6 +12,8 @@ public class Counter {
     protected String fizzBuzzWhizz(int i) {
         boolean isContain5 = String.valueOf(i).contains("5");
         boolean isContain7 = String.valueOf(i).contains("7");
+        boolean isContain3 = String.valueOf(i).contains("3");
+        if(isContain5) isContain3 = false;
         if(isContain7) isContain5 = false;
 
         String string = "";
@@ -20,9 +22,10 @@ public class Counter {
             string += "Buzz";
         }
 
-        if (!isContain5 && i % 3 == 0) {
+        if ((!isContain5 && i % 3 == 0) || isContain3 ) {
             return "Fizz";
         }
+
 
         if (i % 7 == 0) {
             string += "Whizz";
